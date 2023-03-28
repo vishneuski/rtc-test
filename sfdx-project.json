@@ -7,6 +7,14 @@
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "versionDescription": ""
+    },
+    {
+      "path": "force-app",
+      "package": "packageName",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": ""
     }
   ],
   "name": "rtc-test",
@@ -14,6 +22,7 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "57.0",
   "packageAliases": {
-    "Test Package2": "0Ho7Q000000Cah5SAC"
+    "Test Package2": "0Ho7Q000000Cah5SAC",
+    "packageName": "0Ho7Q000000CahASAS"
   }
 }

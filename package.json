@@ -13,7 +13,11 @@
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "postinstall": "husky install",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "createScratchOrg":  "sfdx force:org:create -f config/project-scratch-def.json -a scratchOrgAlias",
+    "createPackage":  "sfdx force:package:create --name packageName --path force-app --packagetype Managed",
+    "convertMetadataApi": "sfdx force:source:convert -r force-app -d testDeploy",
+    "deployTest": "sfdx force:mdapi:deploy -d testDeploy/ -u test_rtc@rtc.com -w 30"
   },
   "devDependencies": {
     "@lwc/eslint-plugin-lwc": "^1.1.2",
